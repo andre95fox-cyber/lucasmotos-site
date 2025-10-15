@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Motos</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      position: relative;
+    }
+
+    /* Fundo com opacidade */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('img/lucas1.jpg') no-repeat center center/cover;
+
+      opacity: 0.3; /* ajuste a transparência aqui */
+      z-index: -2
+    ;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 4px solid #ff6600;
+    }
+
+    header img {
+      max-width: 150px;
+    }
+
+    header h1 {
+  margin: 50px 0 0;
+  font-size: 5em;
+  color: #ff6600;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 5px; /* dá um espaçamento legal entre as letras */
+}
+
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ff6600;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+
+    .servicos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 2px solid #ff6600;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      background: #ff6600;
+      color: #000;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      border-top: 4px solid #ff6600;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <img src="img/croos.jpg" alt="Logo Lucas Motos" class="logo">
+  <h1>Lucas Motos</h1>
+</header>
+
+<style>
+  .logo {
+    width: 1000%;  /* largura desejada */
+    height: auto;  /* mantém proporção */
+  }
+</style>
+
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="card">Conserto de motos</div>
+      <div class="card">Revisão completa</div>
+      <div class="card">Venda de peças</div>
+      <div class="card">Acessórios</div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A <strong>Lucas Motos</strong> é especializada em manutenção, revisão e venda de peças e acessórios para motocicletas.
+       Nosso compromisso é oferecer qualidade, confiança e agilidade para você e sua moto.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📍 Endereço: Av. Pres. Tancredo Neves - Rurópolis, PA, 68165-000</p>
+    <p>📞 Telefone: (93) 99109-3861</p>
+    <p>✉️ Email: contato@lucasmotos.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lucas Motos - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
